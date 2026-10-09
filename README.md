@@ -46,16 +46,17 @@ Screenshots below showcase the actual application. Add the corresponding images 
       <strong>Tickets</strong><br />
       <img src="screenshots/Tickets.png" alt="Tickets" width="100%" />
     </td>
-  <tr>
     <td width="50%" align="center">
       <strong>Continuation of the ticket page</strong><br />
-      <img src="screenshots/Ticket-more-info-scroll.png" alt="Tickets" width="100%" />
+      <img src="screenshots/Ticket-more-info-scroll.png" alt="Continuation of the ticket page" width="100%" />
     </td>
   </tr>
+  <tr>
     <td width="50%" align="center">
       <strong>Ticket Admin Support Notes</strong><br />
       <img src="screenshots/Ticket-admin-support-notes.png" alt="Ticket Admin Support Notes" width="100%" />
     </td>
+    <td width="50%" align="center"></td>
   </tr>
 </table>
 
