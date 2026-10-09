@@ -10,69 +10,48 @@ Screenshots
 
 Screenshots below showcase the actual application. Add the corresponding images to the root screenshots/ directory after capturing them from the running application.
 
-<table> <tr> <td width="50%" align="center">
-
-Dashboard
-
-!Dashboard
-
-</td> <td width="50%" align="center">
-
-Email Verification
-
-!Email Verification
-
-</td> </tr> <tr> <td width="50%" align="center">
-
-Login
-
-!Login
-
-</td> <td width="50%" align="center">
-
-Notifications
-
-!Notifications
-
-</td> </tr> <tr> <td width="50%" align="center">
-
-Register
-
-!Register
-
-</td> <td width="50%" align="center">
-
-Ticket
-
-!Ticket
-
-</td> </tr> <tr> <td width="50%" align="center">
-
-Ticket Admin Support Notes
-
-!Ticket Admin Support Notes
-
-</td> <td width="50%" align="center">
-
-Ticket More Info — Scroll
-
-!Ticket More Info
-
-</td> </tr> <tr> <td width="50%" align="center">
-
-Tickets
-
-!Tickets
-
-</td> <td width="50%" align="center">
-
-!Login
-
-</td> </tr> <tr> <td colspan="2" align="center">
-
-!Email Verification
-
-</td> </tr> </table>
+<table>
+  <tr>
+    <td width="50%" align="center">
+      <strong>Dashboard</strong><br />
+      <img src="screenshots/dashboard.png" alt="Dashboard" width="100%" />
+    </td>
+    <td width="50%" align="center">
+      <strong>Email Verification</strong><br />
+      <img src="screenshots/email-verification.png" alt="Email Verification" width="100%" />
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center">
+      <strong>Login</strong><br />
+      <img src="screenshots/login.png" alt="Login" width="100%" />
+    </td>
+    <td width="50%" align="center">
+      <strong>Notifications</strong><br />
+      <img src="screenshots/notifications.png" alt="Notifications" width="100%" />
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center">
+      <strong>Register</strong><br />
+      <img src="screenshots/register.png" alt="Register" width="100%" />
+    </td>
+    <td width="50%" align="center">
+      <strong>Ticket Details</strong><br />
+      <img src="screenshots/ticket.png" alt="Ticket Details" width="100%" />
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center">
+      <strong>Tickets</strong><br />
+      <img src="screenshots/tickets.png" alt="Tickets" width="100%" />
+    </td>
+    <td width="50%" align="center">
+      <strong>Ticket Admin Support Notes</strong><br />
+      <img src="screenshots/ticket-admin-support-notes.png" alt="Ticket Admin Support Notes" width="100%" />
+    </td>
+  </tr>
+</table>
 
 Key Features
 Authentication and Security
