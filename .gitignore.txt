@@ -1,0 +1,35 @@
+Environment files and secrets
+
+.env .env.* !.env.example !.env.sample
+.env
+.env.backup
+.env.production
+.env.local
+
+Dependencies
+
+/helpdesk-api/vendor/ /helpdesk-front/node_modules/
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+# next.js
+/.next/
+/out/
+
+Build output
+
+/helpdesk-front/.next/ /helpdesk-front/out/ /helpdesk-front/build/
+
+Logs and caches
+
+*.log .DS_Store Thumbs.db
+
+Test and tool caches
+
+.phpunit.cache/ coverage/
+
