@@ -243,6 +243,8 @@ HelpDesk uses a separated frontend and backend architecture.
 
 The frontend communicates with the Laravel API, while authentication, authorization, validation, and business rules remain enforced by the backend.
 
+```
+
 Project Structure
 helpdesk/
 ├── README.md
@@ -258,6 +260,7 @@ helpdesk/
 └── helpdesk-front/
     └── README.md
 
+```
 
 This is a simplified overview. Consult each directory for the complete source structure.
 
