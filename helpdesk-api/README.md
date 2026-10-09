@@ -40,14 +40,14 @@ Node.js is not required to run the API itself
 An SMTP account for email verification in a configured environment
 Installation
 1. Install dependencies
-composer install
+```composer install```
 
 2. Configure environment variables
 
-Copy .env.example to .env.
+```Copy .env.example to .env.```
 
 Configure the database connection in .env:
-
+```
 APP_NAME=HelpDesk
 APP_ENV=local
 APP_DEBUG=true
@@ -59,7 +59,7 @@ DB_PORT=3306
 DB_DATABASE=helpdesk
 DB_USERNAME=your_database_username
 DB_PASSWORD=your_database_password
-
+```
 
 Use values appropriate for your local environment. Do not commit real credentials.
 
