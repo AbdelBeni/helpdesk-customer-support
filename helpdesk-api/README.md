@@ -40,7 +40,9 @@ Node.js is not required to run the API itself
 An SMTP account for email verification in a configured environment
 Installation
 1. Install dependencies
-```composer install```
+```
+composer install
+```
 
 2. Configure environment variables
 
@@ -64,14 +66,16 @@ DB_PASSWORD=your_database_password
 Use values appropriate for your local environment. Do not commit real credentials.
 
 3. Generate the application key
+```
 php artisan key:generate
+```
 
 4. Run database migrations
 
 Create the database first, then execute:
-
-```php artisan migrate```
-
+```
+php artisan migrate
+```
 
 If the project uses database seeders, inspect the available seeders and run the appropriate ones when needed:
 ```
@@ -97,7 +101,9 @@ MAIL_FROM_NAME="${APP_NAME}"
 Use the values required by your provider. Never commit SMTP credentials.
 
 6. Start the API
-```php artisan serve```
+```
+php artisan serve
+```
 
 
 The default local API base URL is:
@@ -238,17 +244,17 @@ Access requirements depend on the configured route middleware and authorization 
 Testing
 
 Run the automated backend test suite:
-
+```
 php artisan test
-
+```
 
 Recorded test results:
-
+```
 Metric	Recorded result
 Tests	74
 Assertions	302
 Failures	0
-
+```
 The suite covers authentication, permissions, ticket workflows, assignment, messages, attachments, activity logs, notifications, request security, dashboards, and performance metrics.
 
 Security
