@@ -126,6 +126,8 @@ API Endpoints
 
 All paths below are relative to /api.
 
+```
+
 Authentication
 Method	Endpoint	Purpose
 POST	/auth/register	Register an account
@@ -172,6 +174,8 @@ GET	/dashboard/customer-stats	Retrieve customer statistics
 GET	/agents	List agents (admin access)
 GET	/categories	List ticket categories
 GET	/priorities	List ticket priorities
+
+```
 
 Access requirements depend on the configured route middleware and authorization policies. Consult routes/api.php for the authoritative route definitions.
 
