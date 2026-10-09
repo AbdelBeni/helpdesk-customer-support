@@ -285,75 +285,74 @@ cd helpdesk
 2. Configure the Backend
 
 Navigate to the backend directory:
-
+```
 cd helpdesk-api
 composer install
-
+```
 
 Create the environment file by copying .env.example to .env.
 
 On macOS or Linux:
-
+```
 cp .env.example .env
-
+```
 
 On Windows Command Prompt:
-
+```
 copy .env.example .env
-
+```
 
 Configure your application, database, and mail settings in .env.
 
 Generate the Laravel application key:
-
+```
 php artisan key:generate
-
+```
 
 Create the database specified in your environment configuration, then run:
-
+```
 php artisan migrate
-
+```
 
 Start the API:
-
+```
 php artisan serve
-
+```
 
 The default local server address is:
 
-http://localhost:8000
-
+```http://localhost:8000```
 
 The documented API base URL is:
 
-http://localhost:8000/api
+```http://localhost:8000/api```
 
 
-For detailed configuration and API documentation, see helpdesk-api/README.md.
+For detailed configuration and API documentation, see [helpdesk-api/README.md](helpdesk-api/README.md).
 
 3. Configure the Frontend
 
 Open a second terminal and navigate to the frontend directory:
-
+```
 cd helpdesk-front
 npm install
-
+```
 
 Create a .env.local file in the frontend root:
-
+```
 NEXT_PUBLIC_API_URL=http://localhost:8000/api
-
+```
 
 This variable specifies the API base URL. It is exposed to the browser, so it must never contain private credentials or secrets.
 
 Start the development server:
-
+```
 npm run dev
-
+```
 
 Open:
 
-http://localhost:3000
+```http://localhost:3000```
 
 
 For detailed frontend setup and implementation information, see helpdesk-front/README.md.
@@ -361,19 +360,19 @@ For detailed frontend setup and implementation information, see helpdesk-front/R
 Testing
 
 The backend README records the following test results from a previous test run:
-
+```
 Metric	Recorded result
 Tests	74
 Assertions	302
 Failures	0
-
+```
 These are previously recorded results, not a guarantee of the current test status.
 
 To run the backend test suite, execute:
-
+```
 cd helpdesk-api
 php artisan test
-
+```
 
 Report updated results only after running the tests against the current codebase.
 
