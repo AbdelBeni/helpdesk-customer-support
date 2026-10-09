@@ -148,6 +148,8 @@ Authentication Flow
 
 The application uses email verification as part of its registration process.
 
+```
+
 Register
    |
    v
@@ -167,6 +169,8 @@ Authentication Token
    |
    v
 Access Authorized Pages
+
+```
 
 
 The verification flow includes code expiration, attempt limits, and resend throttling according to the backend implementation.
@@ -196,6 +200,8 @@ Consult the project's dependency files and environment configuration for the exa
 Architecture
 
 HelpDesk uses a separated frontend and backend architecture.
+
+```
 
 +--------------------------------+
 |        Next.js Frontend        |
@@ -231,6 +237,8 @@ HelpDesk uses a separated frontend and backend architecture.
 |         SMTP Email Service     |
 |       Email Verification       |
 +--------------------------------+
+
+```
 
 
 The frontend communicates with the Laravel API, while authentication, authorization, validation, and business rules remain enforced by the backend.
