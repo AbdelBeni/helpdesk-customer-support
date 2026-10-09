@@ -70,20 +70,20 @@ php artisan key:generate
 
 Create the database first, then execute:
 
-php artisan migrate
+```php artisan migrate```
 
 
 If the project uses database seeders, inspect the available seeders and run the appropriate ones when needed:
-
+```
 php artisan db:seed
-
+```
 
 Only run seeders that are part of your project and appropriate for your environment.
 
 5. Configure email delivery
 
 The application uses SMTP to deliver email verification codes. Configure your mail settings using your own SMTP provider:
-
+```
 MAIL_MAILER=smtp
 MAIL_HOST=your_smtp_host
 MAIL_PORT=587
@@ -92,17 +92,17 @@ MAIL_PASSWORD=your_smtp_password
 MAIL_ENCRYPTION=tls
 MAIL_FROM_ADDRESS=your_verified_sender@example.com
 MAIL_FROM_NAME="${APP_NAME}"
-
+```
 
 Use the values required by your provider. Never commit SMTP credentials.
 
 6. Start the API
-php artisan serve
+```php artisan serve```
 
 
 The default local API base URL is:
 
-http://localhost:8000/api
+```http://localhost:8000/api```
 
 Authentication
 
@@ -110,7 +110,7 @@ Protected endpoints use Laravel Sanctum bearer tokens.
 
 After successful login or email verification, the API returns an authentication token. Send it with protected requests:
 
-Authorization: Bearer YOUR_TOKEN
+Authorization: ```Bearer YOUR_TOKEN```
 Accept: application/json
 
 Email Verification Flow
