@@ -126,56 +126,112 @@ API Endpoints
 
 All paths below are relative to /api.
 
-```
-
 Authentication
-Method	Endpoint	Purpose
-POST	/auth/register	Register an account
-POST	/auth/login	Authenticate a user
-GET	/auth/me	Retrieve the authenticated user
-POST	/auth/logout	Log out
-POST	/auth/verify-email	Verify an email code
-POST	/auth/resend-verification	Request another verification code
-GET	/auth/email-verification-status	Check verification status
+<table>
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>Endpoint</th>
+      <th>Purpose</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>POST</td><td><code>/auth/register</code></td><td>Register an account</td></tr>
+    <tr><td>POST</td><td><code>/auth/login</code></td><td>Authenticate a user</td></tr>
+    <tr><td>GET</td><td><code>/auth/me</code></td><td>Retrieve the authenticated user</td></tr>
+    <tr><td>POST</td><td><code>/auth/logout</code></td><td>Log out</td></tr>
+    <tr><td>POST</td><td><code>/auth/verify-email</code></td><td>Verify an email code</td></tr>
+    <tr><td>POST</td><td><code>/auth/resend-verification</code></td><td>Request another verification code</td></tr>
+    <tr><td>GET</td><td><code>/auth/email-verification-status</code></td><td>Check verification status</td></tr>
+  </tbody>
+</table>
 Tickets
-Method	Endpoint	Purpose
-GET	/tickets	List accessible tickets
-POST	/tickets	Create a ticket
-GET	/tickets/{ticket}	Retrieve ticket details
-PUT/PATCH	/tickets/{ticket}	Update a ticket
-PATCH	/tickets/{ticket}/status	Change ticket status
-GET	/tickets/unassigned	List unassigned tickets
-POST	/tickets/{ticket}/assign	Assign a ticket
-POST	/tickets/{ticket}/claim	Claim an available ticket
+<table>
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>Endpoint</th>
+      <th>Purpose</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>GET</td><td><code>/tickets</code></td><td>List accessible tickets</td></tr>
+    <tr><td>POST</td><td><code>/tickets</code></td><td>Create a ticket</td></tr>
+    <tr><td>GET</td><td><code>/tickets/{ticket}</code></td><td>Retrieve ticket details</td></tr>
+    <tr><td>PUT/PATCH</td><td><code>/tickets/{ticket}</code></td><td>Update a ticket</td></tr>
+    <tr><td>PATCH</td><td><code>/tickets/{ticket}/status</code></td><td>Change ticket status</td></tr>
+    <tr><td>GET</td><td><code>/tickets/unassigned</code></td><td>List unassigned tickets</td></tr>
+    <tr><td>POST</td><td><code>/tickets/{ticket}/assign</code></td><td>Assign a ticket</td></tr>
+    <tr><td>POST</td><td><code>/tickets/{ticket}/claim</code></td><td>Claim an available ticket</td></tr>
+  </tbody>
+</table>
 Messages and Attachments
-Method	Endpoint	Purpose
-GET	/tickets/{ticket}/messages	List ticket messages
-POST	/tickets/{ticket}/messages	Send a message
-GET	/tickets/{ticket}/attachments	List attachments
-POST	/tickets/{ticket}/attachments	Upload an attachment
-DELETE	/tickets/{ticket}/attachments/{attachment}	Delete an attachment
+<table>
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>Endpoint</th>
+      <th>Purpose</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>GET</td><td><code>/tickets/{ticket}/messages</code></td><td>List ticket messages</td></tr>
+    <tr><td>POST</td><td><code>/tickets/{ticket}/messages</code></td><td>Send a message</td></tr>
+    <tr><td>GET</td><td><code>/tickets/{ticket}/attachments</code></td><td>List attachments</td></tr>
+    <tr><td>POST</td><td><code>/tickets/{ticket}/attachments</code></td><td>Upload an attachment</td></tr>
+    <tr><td>DELETE</td><td><code>/tickets/{ticket}/attachments/{attachment}</code></td><td>Delete an attachment</td></tr>
+  </tbody>
+</table>
 Internal Notes and Activity
-Method	Endpoint	Purpose
-GET	/tickets/{ticket}/activity-logs	Retrieve ticket activity
-GET	/tickets/{ticket}/internal-notes	List internal notes
-POST	/tickets/{ticket}/internal-notes	Add an internal note
+<table>
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>Endpoint</th>
+      <th>Purpose</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>GET</td><td><code>/tickets/{ticket}/activity-logs</code></td><td>Retrieve ticket activity</td></tr>
+    <tr><td>GET</td><td><code>/tickets/{ticket}/internal-notes</code></td><td>List internal notes</td></tr>
+    <tr><td>POST</td><td><code>/tickets/{ticket}/internal-notes</code></td><td>Add an internal note</td></tr>
+  </tbody>
+</table>
 Notifications
-Method	Endpoint	Purpose
-GET	/notifications	List notifications
-GET	/notifications/unread-count	Retrieve unread count
-PATCH	/notifications/{notification}/read	Mark a notification as read
+<table>
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>Endpoint</th>
+      <th>Purpose</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>GET</td><td><code>/notifications</code></td><td>List notifications</td></tr>
+    <tr><td>GET</td><td><code>/notifications/unread-count</code></td><td>Retrieve unread count</td></tr>
+    <tr><td>PATCH</td><td><code>/notifications/{notification}/read</code></td><td>Mark a notification as read</td></tr>
+  </tbody>
+</table>
 Dashboard and Reference Data
-Method	Endpoint	Purpose
-GET	/dashboard/stats	Retrieve dashboard statistics
-GET	/dashboard/ticket-trends	Retrieve ticket trends
-GET	/dashboard/agent-performance	Retrieve agent metrics
-GET	/dashboard/response-performance	Retrieve response metrics
-GET	/dashboard/customer-stats	Retrieve customer statistics
-GET	/agents	List agents (admin access)
-GET	/categories	List ticket categories
-GET	/priorities	List ticket priorities
-
-```
+<table>
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>Endpoint</th>
+      <th>Purpose</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>GET</td><td><code>/dashboard/stats</code></td><td>Retrieve dashboard statistics</td></tr>
+    <tr><td>GET</td><td><code>/dashboard/ticket-trends</code></td><td>Retrieve ticket trends</td></tr>
+    <tr><td>GET</td><td><code>/dashboard/agent-performance</code></td><td>Retrieve agent metrics</td></tr>
+    <tr><td>GET</td><td><code>/dashboard/response-performance</code></td><td>Retrieve response metrics</td></tr>
+    <tr><td>GET</td><td><code>/dashboard/customer-stats</code></td><td>Retrieve customer statistics</td></tr>
+    <tr><td>GET</td><td><code>/agents</code></td><td>List agents (admin access)</td></tr>
+    <tr><td>GET</td><td><code>/categories</code></td><td>List ticket categories</td></tr>
+    <tr><td>GET</td><td><code>/priorities</code></td><td>List ticket priorities</td></tr>
+  </tbody>
+</table>
 
 Access requirements depend on the configured route middleware and authorization policies. Consult routes/api.php for the authoritative route definitions.
 
