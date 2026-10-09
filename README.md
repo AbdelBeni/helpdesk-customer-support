@@ -114,29 +114,16 @@ Ticket Workflow
 
 A typical support workflow follows this structure:
 
-Customer
-   |
-   v
-Create Ticket
-   |
-   v
-Unassigned Ticket
-   |
-   +----------------------+
-   |                      |
-   v                      v
-Agent Claims         Admin Assigns
-   |                      |
-   +----------+-----------+
-              |
-              v
-         In Progress
-              |
-              v
-           Resolved
-              |
-              v
-            Closed
+flowchart TD
+    A[Customer] --> B[Create Ticket]
+    B --> C[Unassigned Ticket]
+    C --> D[Agent Claims Ticket]
+    C --> E[Admin Assigns Ticket]
+    D --> F[In Progress]
+    E --> F
+    F --> G[Resolved]
+    G --> H[Closed]
+    H -. Reopen if needed .-> C
 
 
 Tickets can also be reopened when additional support is required, subject to the application's existing workflow rules.
