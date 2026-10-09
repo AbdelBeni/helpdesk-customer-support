@@ -14,21 +14,21 @@ Screenshots below showcase the actual application. Add the corresponding images 
   <tr>
     <td width="50%" align="center">
       <strong>Dashboard</strong><br />
-      <img src="screenshots/dashboard.png" alt="Dashboard" width="100%" />
+      <img src="screenshots/Dashboard.png" alt="Dashboard" width="100%" />
     </td>
     <td width="50%" align="center">
       <strong>Email Verification</strong><br />
-      <img src="screenshots/email-verification.png" alt="Email Verification" width="100%" />
+      <img src="screenshots/email-verficiation.png" alt="Email Verification" width="100%" />
     </td>
   </tr>
   <tr>
     <td width="50%" align="center">
       <strong>Login</strong><br />
-      <img src="screenshots/login.png" alt="Login" width="100%" />
+      <img src="screenshots/Login.png" alt="Login" width="100%" />
     </td>
     <td width="50%" align="center">
       <strong>Notifications</strong><br />
-      <img src="screenshots/notifications.png" alt="Notifications" width="100%" />
+      <img src="screenshots/Notifications.png" alt="Notifications" width="100%" />
     </td>
   </tr>
   <tr>
@@ -38,17 +38,21 @@ Screenshots below showcase the actual application. Add the corresponding images 
     </td>
     <td width="50%" align="center">
       <strong>Ticket Details</strong><br />
-      <img src="screenshots/ticket.png" alt="Ticket Details" width="100%" />
+      <img src="screenshots/Ticket.png" alt="Ticket Details" width="100%" />
     </td>
   </tr>
   <tr>
     <td width="50%" align="center">
       <strong>Tickets</strong><br />
-      <img src="screenshots/tickets.png" alt="Tickets" width="100%" />
+      <img src="screenshots/Tickets.png" alt="Tickets" width="100%" />
+    </td>
+    <td width="50%" align="center">
+      <strong>Continuation of the ticket page</strong><br />
+      <img src="screenshots/Ticket-more-info-scroll.png" alt="Tickets" width="100%" />
     </td>
     <td width="50%" align="center">
       <strong>Ticket Admin Support Notes</strong><br />
-      <img src="screenshots/ticket-admin-support-notes.png" alt="Ticket Admin Support Notes" width="100%" />
+      <img src="screenshots/Ticket-admin-support-notes.png" alt="Ticket Admin Support Notes" width="100%" />
     </td>
   </tr>
 </table>
