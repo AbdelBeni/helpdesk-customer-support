@@ -279,4 +279,4 @@ Related Project
 
 The Next.js frontend is available in the helpdesk-front directory.
 
-For the complete application overview, setup instructions, and screenshots, see the root README.
+For the complete application overview, setup instructions, and screenshots, see the [root README](../README.md).
